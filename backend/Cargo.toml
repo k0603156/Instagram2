@@ -1,0 +1,9 @@
+[package]
+name = "backend"
+version = "0.1.0"
+authors = ["kimyongkuk <k0603156@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+actix-rt="1.1.1"
+actix-web="2.0.0"
