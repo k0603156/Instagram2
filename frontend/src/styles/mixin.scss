@@ -1,0 +1,23 @@
+@mixin button(){
+    display: flex;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    justify-content: center;
+}
+
+@mixin  button-primary(){
+    @include button;
+    background-color: rgba(0,149,246,.3);
+    border-radius: 1px;
+    color: #fff;
+    padding: 5px 9px;
+}
+
+@mixin  button-text(){
+    @include button;
+    background-color: transparent;
+    color: blue;
+    border: none;
+    padding: 5px 9px;
+}

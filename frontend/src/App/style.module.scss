@@ -1,0 +1,78 @@
+@import 'styles/mixin.scss';
+
+
+.main{
+     display: grid;
+     justify-content: center;
+     align-items: center;
+
+     background-color: #fafafa;
+     height: 100vh;
+ }
+
+ section{
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 10px 40px;
+    
+    .logo{
+        margin: 22px auto 12px;
+        background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
+        background-repeat: no-repeat;
+        
+        background-position: 0 -130px;
+        height: 51px;
+        width: 175px;
+    }
+
+    .loginForm{
+        display: flex;
+        flex-direction: column;
+        form{
+            display: flex;
+            flex-direction: column;
+
+            input{
+                color: #262626;
+                font-size: 16px;
+                line-height: 18px;
+
+                margin: 0 0 6px;
+                padding: 9px 0 7px 8px;
+                border: 1 solid #000;
+
+            }
+
+            button[type="submit"]{
+                @include button-primary;
+            }
+        }
+
+        .divider{
+            display: flex;
+            align-items: center;
+            div{
+                flex: 1;
+                text-align: center;
+                &:first-of-type,&:last-of-type{
+                    height: 1px;
+                    background: gray;
+                }
+            }
+        }
+
+        button[type="button"]{
+            @include button-text;
+            span{
+                margin-right: 8px;
+                background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
+                background-repeat: no-repeat;
+                background-position: -414px -259px;
+                height: 16px;
+                width: 16px;
+            }
+        }
+    }
+ }
+
+
